@@ -8,9 +8,11 @@
 
 #import "Sharker_Window.h"
 #import "Sharker_SlidingWindowConfig.h"
-#import "Sharker_ContentView.h"
+#import "Sharker_TagTableViewCell.h"
+#import "Sharker_DetailTableViewCell.h"
+#import "Sharker_SegmentationTableViewCell.h"
 
-@interface Sharker_Window()<UIScrollViewDelegate>
+@interface Sharker_Window()<UIScrollViewDelegate,UITableViewDelegate,UITableViewDataSource>
 
 @end
 
@@ -37,8 +39,8 @@
     self.layer.masksToBounds = YES;
     self.bounces = NO;
 //    设置内容
-    Sharker_ContentView *contentView = [[Sharker_ContentView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
-    [self addSubview:contentView];
+//    Sharker_ContentView *contentView = [[Sharker_ContentView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
+//    [self addSubview:contentView];
 }
 
 #pragma mark- ScrollViewDelegate
@@ -48,9 +50,35 @@
         {
             _offsetBlock((float)scrollView.contentOffset.y);
         }
+    } 
+}
+#pragma mark- TableViewDelegate
+- (NSInteger)numberOfSections{
+    return 1;
+}
+
+- (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 3;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == 0) {
+        Sharker_TagTableViewCell *cell = [[Sharker_TagTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"TagCell"];
+        return cell;
+    }
+    else if (indexPath.row == 1){
+        Sharker_DetailTableViewCell *cell = [[Sharker_DetailTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"DetailCell"];
+        return cell;
+    }
+    else{
+        Sharker_SegmentationTableViewCell *cell = [[Sharker_SegmentationTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"SegmentationCell"];
+        return cell;
     }
     
     
 }
+
 
 @end

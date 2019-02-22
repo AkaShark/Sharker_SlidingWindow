@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef void(^scrollViewOffset)(float offset);
 
-@interface Sharker_Window : UIScrollView
+@interface Sharker_Window : UITableView
 
 @property (nonatomic,copy) scrollViewOffset offsetBlock;
 

@@ -57,6 +57,7 @@
         float percent = (-offset)/maxLen;
         HUDView.alpha = 1-percent;
     };
+    _slidingWindow.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
     [self addSubview:_slidingWindow];
 }
 

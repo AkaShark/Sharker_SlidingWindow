@@ -19,7 +19,10 @@
 		0A04D27622191EED00102E4B /* Sharker_SlidingWindowConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04D27522191EED00102E4B /* Sharker_SlidingWindowConfig.m */; };
 		0A04D279221926AF00102E4B /* Sharker_Window.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04D278221926AF00102E4B /* Sharker_Window.m */; };
 		0A04D27B221A61A600102E4B /* icon_headImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A04D27A221A61A600102E4B /* icon_headImage.png */; };
-		0A04D27E221A829200102E4B /* Sharker_ContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04D27D221A829200102E4B /* Sharker_ContentView.m */; };
+		0A04D283221ADE5D00102E4B /* Sharker_TagTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04D282221ADE5D00102E4B /* Sharker_TagTableViewCell.m */; };
+		0A04D286221ADF2C00102E4B /* Sharker_DetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04D285221ADF2C00102E4B /* Sharker_DetailTableViewCell.m */; };
+		0A04D289221ADF6400102E4B /* Sharker_SegmentationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04D288221ADF6400102E4B /* Sharker_SegmentationTableViewCell.m */; };
+		0A04D28C221BE70700102E4B /* Sharker_TagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A04D28B221BE70700102E4B /* Sharker_TagView.m */; };
 		1A2F0EDF37746B3119D3CF0D /* libPods-Sharker_SlidingWindowTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66015AD272F1F17D447CC53B /* libPods-Sharker_SlidingWindowTests.a */; };
 		6980E5490043C9A1B3207341 /* libPods-Sharker_SlidingWindow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F47E5413EE83985A9F9D2FCC /* libPods-Sharker_SlidingWindow.a */; };
 		F27BF410F116000DD2C53E03 /* libPods-Sharker_SlidingWindowUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 652F31338EE593D5EA1F71C2 /* libPods-Sharker_SlidingWindowUITests.a */; };
@@ -66,8 +69,14 @@
 		0A04D277221926AF00102E4B /* Sharker_Window.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sharker_Window.h; sourceTree = "<group>"; };
 		0A04D278221926AF00102E4B /* Sharker_Window.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sharker_Window.m; sourceTree = "<group>"; };
 		0A04D27A221A61A600102E4B /* icon_headImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_headImage.png; sourceTree = "<group>"; };
-		0A04D27C221A829200102E4B /* Sharker_ContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sharker_ContentView.h; sourceTree = "<group>"; };
-		0A04D27D221A829200102E4B /* Sharker_ContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sharker_ContentView.m; sourceTree = "<group>"; };
+		0A04D281221ADE5D00102E4B /* Sharker_TagTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sharker_TagTableViewCell.h; sourceTree = "<group>"; };
+		0A04D282221ADE5D00102E4B /* Sharker_TagTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sharker_TagTableViewCell.m; sourceTree = "<group>"; };
+		0A04D284221ADF2C00102E4B /* Sharker_DetailTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sharker_DetailTableViewCell.h; sourceTree = "<group>"; };
+		0A04D285221ADF2C00102E4B /* Sharker_DetailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sharker_DetailTableViewCell.m; sourceTree = "<group>"; };
+		0A04D287221ADF6400102E4B /* Sharker_SegmentationTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sharker_SegmentationTableViewCell.h; sourceTree = "<group>"; };
+		0A04D288221ADF6400102E4B /* Sharker_SegmentationTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sharker_SegmentationTableViewCell.m; sourceTree = "<group>"; };
+		0A04D28A221BE70700102E4B /* Sharker_TagView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sharker_TagView.h; sourceTree = "<group>"; };
+		0A04D28B221BE70700102E4B /* Sharker_TagView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sharker_TagView.m; sourceTree = "<group>"; };
 		55BA2309491813834F8CC53F /* Pods-Sharker_SlidingWindow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sharker_SlidingWindow.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sharker_SlidingWindow/Pods-Sharker_SlidingWindow.release.xcconfig"; sourceTree = "<group>"; };
 		652F31338EE593D5EA1F71C2 /* libPods-Sharker_SlidingWindowUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sharker_SlidingWindowUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66015AD272F1F17D447CC53B /* libPods-Sharker_SlidingWindowTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sharker_SlidingWindowTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,8 +151,14 @@
 				0A04D27222191DB700102E4B /* Sharker_SlidingWindow.m */,
 				0A04D277221926AF00102E4B /* Sharker_Window.h */,
 				0A04D278221926AF00102E4B /* Sharker_Window.m */,
-				0A04D27C221A829200102E4B /* Sharker_ContentView.h */,
-				0A04D27D221A829200102E4B /* Sharker_ContentView.m */,
+				0A04D281221ADE5D00102E4B /* Sharker_TagTableViewCell.h */,
+				0A04D282221ADE5D00102E4B /* Sharker_TagTableViewCell.m */,
+				0A04D28A221BE70700102E4B /* Sharker_TagView.h */,
+				0A04D28B221BE70700102E4B /* Sharker_TagView.m */,
+				0A04D284221ADF2C00102E4B /* Sharker_DetailTableViewCell.h */,
+				0A04D285221ADF2C00102E4B /* Sharker_DetailTableViewCell.m */,
+				0A04D287221ADF6400102E4B /* Sharker_SegmentationTableViewCell.h */,
+				0A04D288221ADF6400102E4B /* Sharker_SegmentationTableViewCell.m */,
 				0A04D27A221A61A600102E4B /* icon_headImage.png */,
 				0A04D24522191B3300102E4B /* Main.storyboard */,
 				0A04D24822191B3400102E4B /* Assets.xcassets */,
@@ -519,9 +534,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A04D24422191B3300102E4B /* ViewController.m in Sources */,
+				0A04D286221ADF2C00102E4B /* Sharker_DetailTableViewCell.m in Sources */,
+				0A04D28C221BE70700102E4B /* Sharker_TagView.m in Sources */,
 				0A04D24F22191B3400102E4B /* main.m in Sources */,
+				0A04D289221ADF6400102E4B /* Sharker_SegmentationTableViewCell.m in Sources */,
 				0A04D279221926AF00102E4B /* Sharker_Window.m in Sources */,
-				0A04D27E221A829200102E4B /* Sharker_ContentView.m in Sources */,
+				0A04D283221ADE5D00102E4B /* Sharker_TagTableViewCell.m in Sources */,
 				0A04D24122191B3300102E4B /* AppDelegate.m in Sources */,
 				0A04D27622191EED00102E4B /* Sharker_SlidingWindowConfig.m in Sources */,
 				0A04D27322191DB700102E4B /* Sharker_SlidingWindow.m in Sources */,

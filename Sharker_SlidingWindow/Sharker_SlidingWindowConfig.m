@@ -18,6 +18,10 @@ static Sharker_SlidingWindowConfig *_instance;
     dispatch_once(&onceToken, ^{
         if (_instance == nil) {
             _instance = [super allocWithZone:zone];
+            _instance.imageName = @"icon_headImage";
+            _instance.imageHight = 300.0f;
+            _instance.residueHeight = 100.0f;
+            _instance.cornerRadius = 15;
         }
     });
     return _instance;
